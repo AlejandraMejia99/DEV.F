@@ -1,28 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html>   <!-- Indicar que trabajaremos en HTML5 -->
+<html lang="es"> <!-- Interpretacion del lenguaje en el navegador-->
+<head> <!--Almacenamiento de metadatos y archivos  externos(CSS,JS e Image) -->
+    <meta charset="UTF-8"> <!--Para los caracteres de la region -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidad de navegadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Escala inicial de la pagina -->
+    <title>Intro a la web</title><!--Texto/ Titulo-->
+    <link rel="icon" type="image/x-icon" href="img/tienda.jpg">
 </head>
-<body>
-    <h1>Funcionamiento del Form</h1>
-    <form >
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-        <label for="fecha">Fecha de nacimiento</label>
-        <input type="date" name="fecha">
-        <label for="color">Elige tu color favorito</label>
-        <input type="color" name="color">
-        <label for="genero">Genero</label>
-        <input type="radio" name="genero">Masculino
-        <input type="radio" name="genero">Femenino
-        <input type="radio" name="genero">Otro
-        <input type="submit" value="enviar">
-    </form>
+<body> <!--Que contenga la estructura general de la pagina web-->
+    <header>
+        <h1>Tienda Sala 5</h1>
+        <img src="img/tineda.jpg" alt="Tiendaa" >
+            <h2>Productos en Existencia</h2>
+            <nav>
+                <ul>
+                    <li><a href="#seccion1">Coca-Cola</a> </li>
+                    <li>Pepsi</li>
+                    <li><a href="#seccion2">Chicles</a> </li>
+                    <li>Jabones</li>
+                    <li>Detergentes</li>
+                    <li>Botanas</li>
+                    <li>Limpieza</li>
+                </ul>
+    
+                <h2>Productos por llegar</h2>
+                    <ol>
+                        <li>Lacteos</li>
+                        <li>Cigarros</li>
+                        <li>Cerveza</li>
+                        <li>Maruchan</li>
+                        <li>Verduras</li>
+                        <li>Shampoos</li>
+                        <li>Carnes</li>
+                    </ol>
+            </nav>
+        
+    </header> 
+    
+    <main>
+        <h2>Informacion referente al producto</h2>
+        <section id="seccion1">
+            <h3>Coca-Cola</h3>
+            <p> (conocida comúnmente como Coca en muchos países hispanohablantes; en inglés también conocida como Coke) es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras en más de doscientos países o territorios. Es el principal producto de The Coca-Cola Company, de origen estadounidense. En un principio, cuando la inventó el farmacéutico John Pemberton, fue concebida como una bebida medicinal patentada, aunque fue adquirida posteriormente por el empresario Asa Griggs Candler, que hizo de la bebida una de las más consumidas del siglo xx, y del siglo xxi.
+            </p>
+        </section>
+        <section id="seccion2">
+            <h3>Chicles</h3>
+            <p>Chiclets es una marca de goma de mascar recubierta de caramelo, creada en 1899 y comercializada por Cadbury Adams, actualmente una división de Mondelēz International. Los colores de los chiclets son: amarillo, verde, naranja, rojo, blanco, púrpura, rosa y azul.
+            </p>
+        </section>
+    </main>
+    <a href="HTML/Formulario.html">Formularios</a><br>
 </body>
-<footer>@Derechos Reservados By Me.</footer>
 </html>
